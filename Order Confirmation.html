@@ -2,110 +2,287 @@
 <html lang="en-US">
 
 <body>
-    <div style="width: 500px;">
-        <div style="background-color: #1A1A1A; height: 42px; width: 100%;">
-            <img src="https://hiorka.com/orka-logo-white.png"
-                style="width:67px; height:17.74px;  margin: 12.13px 216.5px;" />
-        </div>
-        <div style="width:inherit; width: 100%">
-            <div style="padding-bottom:74">
-                <img src='./payment successful.png'
-                    style="width: 60px; height:60px; margin: 60px 234px 0px;">
-                <div style="
-      font-weight: 600;
-      font-size: 22px;
-      color: #1A1A1A;
-      line-height: 26.4px;
-      text-align: center;
-      letter-spacing: -0.7px;
-      text-align: center;
-      margin:20px;">Order Confirmation</div>
-                <div style="
-    width: 194px;
-    height: 27px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 150%;
-    letter-spacing: -0.5px;
-    color: #1A1A1A;
-    text-align: center;
-    margin:20px;
-    margin: 8px 0px;">Order Number: %%GLOBAL_OrderId%% </div>
+  <div style="width: 414px;">
+    <div style="background-color: #1A1A1A; height: 42px; width: 100%;">
+      <img src="https://hiorka.com/orka-logo-white.png" style="width:67px; height:17.74px;  margin: 15px 173px;" />
+    </div>
+    <div style="width:inherit; width: 100%;background: #E5E5E5;">
+      <div style="padding-bottom:74">
 
-            <div style="
-      margin: 40px 0px;
-      height: 175px;
-      background: #F4F4F1;
-      padding: 16px;
-      margin-bottom: 45px;">
-                <div style="font-family: Inter;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 120%;
-      letter-spacing: -0.2px;
-      color: #1A1A1A;
-      margin: 0px;
-      padding-bottom:16.5px">
-                    Issue with the link?
-                </div>
-                <div style="font-family: Inter;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 120%;
-      letter-spacing: -0.2px;
+        <!-- title -->
+        <div style="margin-bottom:15px;padding-bottom: 40px;">
+          <img src='./payment successful.png' style="width: 60px; height:60px;
+          margin-left: 183px;
+          margin-top:40px;
+          ">
+          <div style="
+        font-weight: 600;
+        font-size: 22px;
+        color: #1A1A1A;
+        line-height: 26.4px;
+        text-align: center;
+        letter-spacing: -0.7px;
+        text-align: center;
+        margin:20px;">Order Confirmation</div>
+          <div style="
+        font-weight: 600;
+        font-size: 18px;
+        color: #1A1A1A;
+        line-height: 27px;
+        text-align: center;
+        letter-spacing: -0.5px;
+        text-align: center;
+        margin-bottom:8px;">
+            Order Number: %%GLOBAL_OrderNumber%% </div>
+          <div
+            style="font-weight: 400;letter-spacing:-0.4px;font-size:16px;line-height: 24px;text-align: center;color: #1A1A1A;">
+            Thank you for your order</div>
+          <div
+            style="margin-top:8px;font-weight: 400;letter-spacing:-0.4px;font-size:14px;line-height: 19.6px;text-align: center;color: #1A1A1A;">
+            Order Date: %%GLOBAL_OrderDate%%</div>
+
+        </div>
+
+        <!-- card 1 -->
+        <div style="
+       background: #FFFFFF;
+       height: 399px;
+       width: 352px;
+       border-radius: 12px;
+       margin: auto;
+       margin-top: 16px;
+       margin-bottom: 16px;
+       padding:24px 16px;
+      ">
+          <div style="
+      font-weight:600;
+      font-size:18px;
+      line-height:150%;
+      margin-bottom: 24px;
+      ">Order Summary</div>
+          <hr style="color: #EAEAEA;width: 352px; border: none; height: 1px; background-color: #EAEAEA;">
+          <div style="margin-top: 21px;margin-bottom: 21px;">
+
+            <img style='display: inline-block;width: 56px;height: 56px;margin-right: 21px;' src="./Rectangle 4.png"
+              alt="">
+
+            <div style="display: inline-block;">
+              <div><span
+                  style="font-weight: normal;font-size: 16px;line-height: 24px;letter-spacing: -0.4px;color:#1A1A1A">Orka
+                  One hearing aids</span><br /></div>
+              <div style="margin:4px 0px;"><span
+                  style="font-weight: 600;font-size:16x;color:#1A1A1A;line-height: 19.2px;"> %%GLOBAL_ProductPrice%% </span></span><br />
+              </div>
+              <div style="margin-top: 4px;"><span
+                  style="font-weight: 600;font-size: 14px;color:#1A1A1A;line-height: 18px;">QTY: %%GLOBAL_ProductQty%% </span></div>
+            </div>
+          </div>
+          <hr style="color: #EAEAEA;width: 352px; border: none; height: 1px; background-color: #EAEAEA;">
+          </hr>
+
+          <div style="
+      width: 352px;
+      margin-top:24px;
+      margin-bottom: 24px;
+      ">
+            <div>
+              <span style="
+      font-weight:600;
+      font-size:14px;
+      line-height: 18px;
       color: #404040;
-      margin:0px;
-      word-wrap: break-word;">
-                    Copy and paste the link down below into your browser and try again:
-                </div>
-                <a href="%LINK%" style="font-family: Inter;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 120%;
-      letter-spacing: -0.2px;
-      color:#1E90FF;
-      margin:0px;
-      word-wrap: break-word;">
-                    %LINK%
-                </a>
-                <br />
-                <br />
-                <div style="font-family: Inter;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 120%;
-      letter-spacing: -0.2px;
-      color: #404040;
-      margin:0px;
-      word-wrap: break-word;">
-                    If you experience any difficulty during the process, feel free to email Orka support team: <a
-                        href="support@hiorka.com" style="color:#1E90FF;">support@hiorka.com</a>. We are happy to help!
-                </div>
+        ">Subtotal:</span>
+              <span style="
+    font-size:14px;
+    font-weight:400;
+    line-height:19.6px;
+    letter-spacing:-0.4px;
+    float:right ;
+    color: #404040;
+    ">%%GLOBAL_Price%% </span>
             </div>
 
-            <div
-                style="position: relative; top: 20px; border: 1px solid #B2B2B2;height: 0px;width: inherit;margin-bottom:44.25px">
+            <div style="margin:16px 0px">
+              <span style="
+          font-weight:600;
+          font-size:14px;
+          line-height: 18px;
+          color: #404040;
+            ">Discount:</span>
+              <span style="
+        font-size:14px;
+        font-weight:400;
+        line-height:19.6px;
+        letter-spacing:-0.4px;
+        float: right;
+        color: #404040;
+        "> %%GLOBAL_CouponDiscount%% </span>
             </div>
 
-            <div
-                style="height: 48px; width: inherit; text-align: center; font-family: Inter; font-style: normal; font-weight: normal; font-size: 12px; color:#616568;margin:0px">
-                See specific Orka's privacy protection and medical disclaimer, please visit <a
-                    href="https://hiorka.com/legal/TermsOfService" style="color:#F9AA1E;">Terms of Service.</a></div>
-            <div
-                style="height: 48px; width: inherit; text-align: center; font-family: Inter; font-style: normal; font-weight: normal; font-size: 12px; color:#616568;margin: 0px 0px 91px 0px;">
-                This Email was sent from a notification-only address that cannot accept incoming email. Please do not
-                reply to this message. If you have any concern, please contact <a href="mailto:support@hiorka.com"
-                    style="color:#F9AA1E;">support@hiorka.com</a></div>
-            <div
-                style="height: 48px; width: inherit; text-align: center; font-family: Inter; font-style: normal; font-weight: normal; font-size: 12px; color:#616568;margin:0px">
-                Copyright © 2021 Orka Labs. All rights reserved.</div>
+            <div style="margin:16px 0px">
+              <span style="
+      font-weight:600;
+      font-size:14px;
+      line-height: 18px;
+      color: #404040;
+        ">Tax:</span>
+              <span style="
+    font-size:14px;
+    font-weight:400;
+    line-height:19.6px;
+    letter-spacing:-0.4px;
+    float: right;
+    color: #404040;
+    "> %%GLOBAL_TaxCost%% </span>
+            </div>
+
+            <div style="margin:16px 0px;">
+              <span style="
+          font-weight:600;
+          font-size:14px;
+          line-height: 18px;
+          color: #404040;
+            ">shipping:</span>
+              <span style="
+        font-size:14px;
+        font-weight:400;
+        line-height:19.6px;
+        letter-spacing:-0.4px;
+        float: right;
+        color: #404040;
+        ">%%GLOBAL_ShippingCost%%</span>
+            </div>
+          </div>
+          <hr style="color: #EAEAEA;width: 352px; border: none; height: 1px; background-color: #EAEAEA;">
+          </hr>
+
+          <div style="margin-top:24px"><span style="
+            font-weight:600;
+            font-size:16x;
+            ">Total</span><span
+              style="font-weight:600;font-size:16px;line-height:19.2px;letter-spacing:-0.2px;float: right;">%%GLOBAL_TotalCost%%</span>
+          </div>
         </div>
+
+        <!-- card 2 -->
+        <div style="
+       background: #FFFFFF;
+       height: 376px;
+       width: 352px;
+       border-radius: 12px;
+       margin: auto;
+       margin-top: 16px;
+       margin-bottom: 16px;
+       padding:24px 16px;
+       ">
+          <div style="font-weight: 600;font-size: 18px;line-height: 27px;letter-spacing: -0.5px;">Shipping Information
+          </div>
+          <hr
+            style="margin:24px 0px;color: #EAEAEA;width: 352px; border: none; height: 1px; background-color: #EAEAEA;">
+          </hr>
+          <div style="font-weight: 600;font-size:16px;line-height: 19.2px;letter-spacing: -0.2px;">Shipping Method</div>
+          <div style="font-weight:400;font-size:14px;line-height:19.6px;letter-spacing:-0.4px;margin-top:16px">%%GLOBAL_ShippingMethod%%</div>
+          <div style="font-weight:600;font-size:16px;line-height:19.2px;letter-spacing:-0.2px;margin-top:24px">Shipping
+            Address</div>
+          <div
+            style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:16px;font-size: 14px;color: #404040;">
+            %%GLOBAL_ShippingEmail%%</div>
+          <div
+            style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:12px;font-size: 14px;color: #404040;">
+            %%GLOBAL_ShippingAddressFormIntro%%</div>
+          <div
+            style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:12px;font-size: 14px;color: #404040;">
+            %%GLOBAL_ShippingAddressFormAction%%</div>
+          <div
+            style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:12px;font-size: 14px;color: #404040;">
+            %%GLOBAL_ShippingPhone%%</div>
+          <div
+            style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:12px;font-size: 14px;color: #404040;">
+            %%GLOBAL_ShippingAddress%% </div>
+        </div>
+
+        <!-- card 3 -->
+        <div style="
+       background: #FFFFFF;
+       height: 376px;
+       width: 352px;
+       border-radius: 12px;
+       margin: auto;
+       margin-top: 16px;
+       margin-bottom: 16px;
+       padding:24px 16px;
+       ">
+          <div style="font-weight: 600;letter-spacing: -0.5px;line-height: 27px;font-size: 18px;color: #1A1A1A;">Payment
+            Information</div>
+          <hr
+            style="margin:24px 0px;color: #EAEAEA;width: 352px; border: none; height: 1px; background-color: #EAEAEA;">
+          <div style="font-weight: 600;letter-spacing: -0.2px;line-height: 19.2px;font-size: 16px;color: #1A1A1A;">
+            Payment Method</div>
+          <div
+            style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:16px;font-size: 14px;color: #404040;">
+            %%GLOBAL_PaymentMethod%%</div>
+          <div
+            style="font-weight: 600;letter-spacing: -0.2px;line-height: 19.2px;font-size: 16px;margin-top:24px;color: #1A1A1A;">
+            Billing Address</div>
+          <div
+            style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:16px;font-size: 14px;color: #404040;">
+            %%GLOBAL_BillingEmail%% </div>
+          <div
+            style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:12px;font-size: 14px;color: #404040;">
+            %%GLOBAL_BillingAddress%% </div>
+          <div
+            style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:12px;font-size: 14px;color: #404040;">
+            %%GLOBAL_BillingAddress%% </div>
+          <div
+            style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:12px;font-size: 14px;color: #404040;">
+            %%GLOBAL_BillingPhone%% </div>
+          <div
+            style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:16px;font-size: 14px;color: #404040;">
+            %%GLOBAL_BillingAddress%% </div>
+        </div>
+
+        <!-- footcard -->
+        <div
+          style="background-color: #F9DB87;width:383px;height:144px;border-radius:12px;margin-top:16px;padding-top:24px;margin: auto;">
+          <div style="margin:0px 39px;">
+            <div
+              style="font-weight: 600;line-height: 27px;letter-spacing: -0.5px;font-size:18px;color: #000000;text-align: center;">
+              Download our App</div>
+            <div style="margin-top: 13px;"><img style='float: left;' src="./app.png" alt=""><img style='float: right;'
+                src="./geogle.png" alt=""></div>
+          </div>
+        </div>
+
+        <!-- logo -->
+        <div style="margin-top:116px;margin-left:185px;"><img src="./logo.png" alt=""></div>
+
+
+        <hr style="color: #EAEAEA;width: 352px; border: none; height: 1px; background-color: #B2B2B2;">
+        <!-- textArea -->
+        <div style="width:383px;height:167.41px;margin-top: 54px;">
+          <div
+            style="text-align: center; font-weight: 400;letter-spacing: -0.4px; font-size: 12px;line-height: 14.4px;color:#616568;text-indent: 15px;">
+            See specific Orka's privacy protection and medical disclaimer, please visit <a
+              href="https://hiorka.com/legal/TermsOfService" style="color:#F9AA1E;">Terms of Service.</a></div>
+          <div
+            style="text-align: center; font-weight: 400;letter-spacing: -0.4px; font-size: 12px;line-height: 14.4px;color:#616568;">
+            <br>
+            This Email was sent from a notification-only address that cannot accept incoming email. Please do not
+            reply to this message. If you have any questions, please contact <a href="mailto:support@hiorka.com"
+              style="color:#F9AA1E;">support@hiorka.com</a>
+            <br>You can unsubscribe from our emails ait any time.
+          </div>
+        </div>
+        <!-- icons -->
+        <div style="text-align:center;margin-top: 15.34px;margin-bottom: 14.18px;"><img src="./facebook.png"
+            style='margin-right:40px;' alt=""><img style='margin-right:40px;' src="./M.png" alt=""><img
+            style='margin-right:40px;' style='margin-right:40px;' src="./bird.png" alt=""><img src="./email.png" alt="">
+        </div>
+        <!-- footer -->
+        <div
+          style="height: 48px; width: inherit; text-align: center; font-family: Inter; font-style: normal; font-weight: normal; font-size: 12px; color:#616568;margin:0px">
+          Copyright © 2021 Orka Labs. All rights reserved.</div>
+      </div>
     </div>
 </body>
 
