@@ -8,7 +8,7 @@
 
         <!-- title -->
         <div style="margin-bottom:15px;padding-bottom: 40px;">
-          <img src='./payment successful.png' style="width: 60px; height:60px;
+          <img src='http://localhost:3000/imgs/Email/payment successful.png' style="width: 60px; height:60px;
           margin-left: 183px;
           margin-top:40px;
           ">
@@ -20,7 +20,7 @@
         text-align: center;
         letter-spacing: -0.7px;
         text-align: center;
-        margin:20px;">Order Confirmation</div>
+        margin:20px;">Order Confirmation </div>
           <div style="
         font-weight: 600;
         font-size: 18px;
@@ -60,7 +60,7 @@
           <hr style="color: #EAEAEA;width: 352px; border: none; height: 1px; background-color: #EAEAEA;">
           <div style="margin-top: 21px;margin-bottom: 21px;">
 
-            <img style='display: inline-block;width: 56px;height: 56px;margin-right: 21px;' src="./Rectangle 4.png"
+            <img style='display: inline-block;width: 56px;height: 56px;margin-right: 21px;' src="http://localhost:3000/imgs/Email/Rectangle 4.png"
               alt="">
 
             <div style="display: inline-block;">
@@ -71,7 +71,7 @@
                   style="font-weight: 600;font-size:16x;color:#1A1A1A;line-height: 19.2px;"> %%GLOBAL_ProductPrice%% </span></span><br />
               </div>
               <div style="margin-top: 4px;"><span
-                  style="font-weight: 600;font-size: 14px;color:#1A1A1A;line-height: 18px;">QTY: %%GLOBAL_AddToCartQty%% </span></div>
+                  style="font-weight: 600;font-size: 14px;color:#1A1A1A;line-height: 18px;">QTY: %%GLOBAL_QtyOptionSelected%%    %%GLOBAL_QtySelectStyle%% </span></div>
             </div>
           </div>
           <hr style="color: #EAEAEA;width: 352px; border: none; height: 1px; background-color: #EAEAEA;">
@@ -113,7 +113,9 @@
         letter-spacing:-0.4px;
         float: right;
         color: #404040;
-        "> %%GLOBAL_DiscountAmount%% </span>
+        "> 
+%%GLOBAL_BulkDiscountThickBoxTitle%%
+ </span>
             </div>
 
             <div style="margin:16px 0px">
@@ -130,7 +132,9 @@
     letter-spacing:-0.4px;
     float: right;
     color: #404040;
-    "> %%GLOBAL_Taxes%% </span>
+    "> 
+%%GLOBAL_TaxCost%%
+</span>
             </div>
 
             <div style="margin:16px 0px;">
@@ -185,17 +189,8 @@
             style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:16px;font-size: 14px;color: #404040;">
             %%GLOBAL_ShippingEmail%%</div>
           <div
-            style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:12px;font-size: 14px;color: #404040;">
-            %%GLOBAL_ShippingAddressFormIntro%%</div>
-          <div
-            style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:12px;font-size: 14px;color: #404040;">
-            %%GLOBAL_ShippingAddressFormAction%%</div>
-          <div
-            style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:12px;font-size: 14px;color: #404040;">
-            %%GLOBAL_ShippingPhone%%</div>
-          <div
-            style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:12px;font-size: 14px;color: #404040;">
-            %%GLOBAL_ShippingAddress%% </div>
+            style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px important;margin-top:12px; font-size: 14px important;color: #404040;">
+             %%GLOBAL_ShippingAddress%% </div>
         </div>
 
         <!-- card 3 -->
@@ -217,7 +212,7 @@
             Payment Method</div>
           <div
             style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:16px;font-size: 14px;color: #404040;">
-            %%GLOBAL_PaymentMessage%%</div>
+            %%SNIPPET_PaymentMethod%%</div>
           <div
             style="font-weight: 600;letter-spacing: -0.2px;line-height: 19.2px;font-size: 16px;margin-top:24px;color: #1A1A1A;">
             Billing Address</div>
@@ -233,13 +228,13 @@
             <div
               style="font-weight: 600;line-height: 27px;letter-spacing: -0.5px;font-size:18px;color: #000000;text-align: center;">
               Download our App</div>
-            <div style="margin-top: 13px;"><img style='float: left;' src="./app.png" alt=""><img style='float: right;'
-                src="./geogle.png" alt=""></div>
+            <div style="margin-top: 13px;"><img style='float: left;' src="http://localhost:3000/imgs/Email/app.png" alt=""><img style='float: right;'
+                src="http://localhost:3000/imgs/Email/geogle.png" alt=""></div>
           </div>
         </div>
 
         <!-- logo -->
-        <div style="margin-top:116px;margin-left:185px;"><img src="./logo.png" alt=""></div>
+        <div style="margin-top:116px;margin-left:185px;"><img src="http://localhost:3000/imgs/Email/logo.png" alt=""></div>
 
 
         <hr style="color: #EAEAEA;width: 352px; border: none; height: 1px; background-color: #B2B2B2;">
@@ -259,9 +254,12 @@
           </div>
         </div>
         <!-- icons -->
-        <div style="text-align:center;margin-top: 15.34px;margin-bottom: 14.18px;"><img src="./facebook.png"
-            style='margin-right:40px;' alt=""><img style='margin-right:40px;' src="./M.png" alt=""><img
-            style='margin-right:40px;' style='margin-right:40px;' src="./bird.png" alt=""><img src="./email.png" alt="">
+        <div style="text-align:center;margin-top: 15.34px;margin-bottom: 14.18px;">
+          <a href='https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FOrkaHearingAids'><img src="http://localhost:3000/imgs/Email/facebook.png"
+          style='margin-right:40px;' alt=""></a>
+          <a href="https://orka.medium.com/"><img style='margin-right:40px;' src="http://localhost:3000/imgs/Email/M.png" alt=""></a>
+          <a href="https://twitter.com/OrkaHearingAids"><img style='margin-right:40px;' style='margin-right:40px;' src="http://localhost:3000/imgs/Email/bird.png" alt=""></a>
+          <a href="https://exmail.qq.com/cgi-bin/frame_html?t=newwin_frame&sid=js4zEwwucDbHDCJC,2&url=%2Fcgi-bin%2Freadtemplate%3Ft%3Dcompose%26s%3Dcliwrite%26%26email%3Dsupport%40hiorka.com"><img src="http://localhost:3000/imgs/Email/email.png" alt=""></a>
         </div>
         <!-- footer -->
         <div
