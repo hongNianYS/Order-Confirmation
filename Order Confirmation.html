@@ -1,4 +1,7 @@
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <body>
     <div style="width: 414px;">
       <div style="background-color: #1A1A1A; height: 42px; width: 100%;">
@@ -14,6 +17,8 @@
             margin-top:40px;
             ">
             <div style="
+          font-family:'Inter';
+          font-style: normal;
           font-weight: 600;
           font-size: 22px;
           color: #1A1A1A;
@@ -23,6 +28,8 @@
           text-align: center;
           margin:20px;">Order Confirmation </div>
             <div style="
+          font-family: 'Inter';
+          font-style: normal;
           font-weight: 600;
           font-size: 18px;
           color: #1A1A1A;
@@ -33,11 +40,11 @@
           margin-bottom:8px;">
               Order Number: %%GLOBAL_OrderNumber%% </div>
             <div
-              style="font-weight: 400;letter-spacing:-0.4px;font-size:16px;line-height: 24px;text-align: center;color: #1A1A1A;">
+              style="font-weight:400;font-family:'Inter';letter-spacing:-0.4px;font-size:16px;line-height: 24px;text-align: center;">
               Thank you for your order</div>
-            <div
-              style="margin-top:8px;font-weight: 400;letter-spacing:-0.4px;font-size:14px;line-height: 19.6px;text-align: center;color: #1A1A1A;">
-              Order Date: %%GLOBAL_OrderDate%%</div>
+            <!-- <div
+              style="font-family: 'Inter';margin-top:8px;font-weight: 400;letter-spacing:-0.4px;font-size:14px;line-height: 19.6px;text-align: center;color: #1A1A1A;">
+              Order Date: %%GLOBAL_OrderDate%%</div> -->
   
           </div>
   
@@ -53,6 +60,7 @@
          padding:24px 16px;
         ">
             <div style="
+        font-family: 'Inter';
         font-weight:600;
         font-size:18px;
         line-height:150%;
@@ -66,13 +74,13 @@
   
               <div style="display: inline-block;">
                 <div><span
-                    style="font-weight: normal;font-size: 16px;line-height: 24px;letter-spacing: -0.4px;color:#1A1A1A">Orka
+                    style="font-family: 'Inter';font-weight: normal;font-size: 16px;line-height: 24px;letter-spacing: -0.4px;color:#1A1A1A">Orka
                     One hearing aids</span><br /></div>
                 <div style="margin:4px 0px;"><span
-                    style="font-weight: 600;font-size:16x;color:#1A1A1A;line-height: 19.2px;"> %%GLOBAL_ProductPrice%% </span></span><br />
+                    style="font-family: 'Inter';font-weight: 600;font-size:16x;color:#1A1A1A;line-height: 19.2px;"> %%GLOBAL_ProductPrice%% </span></span><br />
                 </div>
                 <div style="margin-top: 4px;"><span
-                    style="font-weight: 600;font-size: 14px;color:#1A1A1A;line-height: 18px;">QTY: %%GLOBAL_QtyOptionSelected%%    %%GLOBAL_QtySelectStyle%% </span></div>
+                    style="font-family: 'Inter';font-weight: 600;font-size: 14px;color:#1A1A1A;line-height: 18px;">QTY: %%GLOBAL_ProductQuantity%% </span></div>
               </div>
             </div>
             <hr style="color: #EAEAEA;width: 352px; border: none; height: 1px; background-color: #EAEAEA;">
@@ -83,14 +91,16 @@
         margin-top:24px;
         margin-bottom: 24px;
         ">
-              <div>
+              <!-- <div>
                 <span style="
+        font-family: 'Inter';
         font-weight:600;
         font-size:14px;
         line-height: 18px;
         color: #404040;
           ">Subtotal:</span>
                 <span style="
+      font-family: 'Inter';
       font-size:14px;
       font-weight:400;
       line-height:19.6px;
@@ -98,10 +108,11 @@
       float:right ;
       color: #404040;
       ">%%GLOBAL_fastCartSubtotal%% </span>
-              </div>
+              </div> -->
   
-              <div style="margin:16px 0px">
+              <!-- <div style="margin:16px 0px">
                 <span style="
+            font-family: 'Inter';
             font-weight:600;
             font-size:14px;
             line-height: 18px;
@@ -117,7 +128,7 @@
           "> 
   %%GLOBAL_BulkDiscountThickBoxTitle%%
    </span>
-              </div>
+              </div> -->
   
               <div style="margin:16px 0px">
                 <span style="
@@ -125,7 +136,8 @@
         font-size:14px;
         line-height: 18px;
         color: #404040;
-          ">Tax:</span>
+        font-family: 'Inter';
+          "> %%SNIPPET_TotalRows%% </span>
                 <span style="
       font-size:14px;
       font-weight:400;
@@ -133,19 +145,22 @@
       letter-spacing:-0.4px;
       float: right;
       color: #404040;
+      font-family: 'Inter';
       "> 
   %%GLOBAL_TaxCost%%
   </span>
               </div>
   
-              <div style="margin:16px 0px;">
+              <!-- <div style="margin:16px 0px;">
                 <span style="
+            font-family: 'Inter';
             font-weight:600;
             font-size:14px;
             line-height: 18px;
             color: #404040;
               ">shipping:</span>
                 <span style="
+          font-family: 'Inter';
           font-size:14px;
           font-weight:400;
           line-height:19.6px;
@@ -153,17 +168,18 @@
           float: right;
           color: #404040;
           "> %%GLOBAL_ShippingCost%% </span>
-              </div>
+              </div> -->
             </div>
-            <hr style="color: #EAEAEA;width: 352px; border: none; height: 1px; background-color: #EAEAEA;">
-            </hr>
+            <!-- <hr style="color: #EAEAEA;width: 352px; border: none; height: 1px; background-color: #EAEAEA;">
+            </hr> -->
   
-            <div style="margin-top:24px"><span style="
+            <!-- <div style="margin-top:24px"><span style="
+            font-family: 'Inter';
               font-weight:600;
               font-size:16x;
               ">Total</span><span
-                style="font-weight:600;font-size:16px;line-height:19.2px;letter-spacing:-0.2px;float: right;">%%GLOBAL_TotalCost%%</span>
-            </div>
+                style="font-family: 'Inter';font-weight:600;font-size:16px;line-height:19.2px;letter-spacing:-0.2px;float: right;">%%GLOBAL_TotalCost%%</span>
+            </div> -->
           </div>
   
           <!-- card 2 -->
@@ -177,25 +193,26 @@
          margin-bottom: 16px;
          padding:24px 16px;
          ">
-            <div style="font-weight: 600;font-size: 18px;line-height: 27px;letter-spacing: -0.5px;">Shipping Information
+            <div style="font-family: 'Inter';font-weight: 600;font-size: 18px;line-height: 27px;letter-spacing: -0.5px;">Shipping Information
             </div>
             <hr
               style="margin:24px 0px;color: #EAEAEA;width: 352px; border: none; height: 1px; background-color: #EAEAEA;">
             </hr>
-            <div style="font-weight: 600;font-size:16px;line-height: 19.2px;letter-spacing: -0.2px;">Shipping Method</div>
-            <div style="font-weight:400;font-size:14px;line-height:19.6px;letter-spacing:-0.4px;margin-top:16px">%%GLOBAL_ShippingMethod%%</div>
-            <div style="font-weight:600;font-size:16px;line-height:19.2px;letter-spacing:-0.2px;margin-top:24px">Shipping
+            <div style="font-family: 'Inter';font-weight: 600;font-size:16px;line-height: 19.2px;letter-spacing: -0.2px;">Shipping Method</div>
+            <div style="font-family: 'Inter';font-weight:400;font-size:14px;line-height:19.6px;letter-spacing:-0.4px;margin-top:16px">%%GLOBAL_ShippingMethod%%</div>
+            <div style="font-family: 'Inter';font-weight:600;font-size:16px;line-height:19.2px;letter-spacing:-0.2px;margin-top:24px">Shipping
               Address</div>
             <div
-              style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:16px;font-size: 14px;color: #404040;">
+              style="font-family: 'Inter';font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:16px;font-size: 14px;color: #404040;">
               %%GLOBAL_ShippingEmail%%</div>
             <div
-              style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px important;margin-top:12px; font-size: 14px important;color: #404040;">
+              style="font-family: 'Inter';font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px important;margin-top:12px; font-size: 14px important;color: #404040;">
                %%GLOBAL_ShippingAddress%% </div>
           </div>
   
           <!-- card 3 -->
           <div style="
+          font-family: 'Inter';
          background: #FFFFFF;
          height: 376px;
          width: 352px;
@@ -213,7 +230,7 @@
               Payment Method</div>
             <div
               style="font-weight: 400;letter-spacing: -0.4px;line-height: 19.6px;margin-top:16px;font-size: 14px;color: #404040;">
-              %%SNIPPET_PaymentMethod%%</div>
+              %%GLOBAL_PaymentProviderMethod%%</div>
             <div
               style="font-weight: 600;letter-spacing: -0.2px;line-height: 19.2px;font-size: 16px;margin-top:24px;color: #1A1A1A;">
               Billing Address</div>
@@ -224,14 +241,15 @@
   
           <!-- footcard -->
           <div
-            style="background-color: #F9DB87;width:383px;height:144px;border-radius:12px;margin-top:16px;padding-top:24px;margin: auto;">
+            style="font-family: 'Inter';background-color: #F9DB87;width:383px;height:144px;border-radius:12px;margin-top:16px;padding-top:24px;margin: auto;">
             <div style="margin:0px 39px;">
               <div
                 style="font-weight: 600;line-height: 27px;letter-spacing: -0.5px;font-size:18px;color: #000000;text-align: center;">
                 Download our App</div>
               <div style="margin-top: 13px;">
-                <img style='float: left;width:127.5px;height: 40px;margin-top: 15px;' src="http://localhost:3000/imgs/Email/app.png" alt="">
-                <img style='float: right;width: 127.5px;height: 40px;margin-top: 15px;'src="http://localhost:3000/imgs/Email/geogle.png" alt=""></div>
+                <a href="https://apps.apple.com/us/app/orka-health/id1525826891"><img style='float: left;width:127.5px;height: 40px;margin-top: 15px;' src="http://localhost:3000/imgs/Email/app.png" alt=""></a>
+                <a href="https://play.google.com/store/apps/details?id=com.hiorka.orka&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img style='float: right;width: 127.5px;height: 40px;margin-top: 15px;'src="http://localhost:3000/imgs/Email/geogle.png" alt=""></a>
+                </div>
             </div>
           </div>
   
@@ -241,7 +259,7 @@
   
           <hr style="color: #EAEAEA;width: 352px; border: none; height: 1px; background-color: #B2B2B2;">
           <!-- textArea -->
-          <div style="width:383px;height:167.41px;margin-top: 54px;">
+          <div style="font-family: 'Inter';width:383px;height:167.41px;margin-top: 54px;">
             <div
               style="text-align: center; font-weight: 400;letter-spacing: -0.4px; font-size: 12px;line-height: 14.4px;color:#616568;text-indent: 15px;">
               See specific Orka's privacy protection and medical disclaimer, please visit <a
@@ -260,7 +278,7 @@
             <a href='https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FOrkaHearingAids'>
               <img src="http://localhost:3000/imgs/Email/facebook.png" style='margin-right:40px;width: 24px;height: 24px;' alt=""></a>
             <a href="https://orka.medium.com/"><img style='margin-right:40px;width: 24px;height: 24px;' src="http://localhost:3000/imgs/Email/medium.png" alt=""></a>
-            <a href="https://twitter.com/OrkaHearingAids"><img style='margin-right:40px;width: 24px;height: 24px;' style='margin-right:40px;' src="http://localhost:3000/imgs/Email/twitter.png" alt=""></a>
+            <a href="https://twitter.com/OrkaHearingAids"><img style='margin-right:40px;width: 24px;height: 24px;margin-right:40px;' src="http://localhost:3000/imgs/Email/twitter.png" alt=""></a>
             <a href="https://exmail.qq.com/cgi-bin/frame_html?t=newwin_frame&sid=js4zEwwucDbHDCJC,2&url=%2Fcgi-bin%2Freadtemplate%3Ft%3Dcompose%26s%3Dcliwrite%26%26email%3Dsupport%40hiorka.com"><img src="http://localhost:3000/imgs/Email/email.png" style="width: 24px;height: 24px;" alt=""></a>
           </div>
           <!-- footer -->
